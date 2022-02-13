@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ProjetC_IG"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="doc">
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 doc"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lines">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/lines" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 lines"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lines/fast">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/lines" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 lines/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ei">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/libei.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 ei"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ei/fast">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/libei.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 ei/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="text">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/text" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 text"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="text/fast">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/text" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 text/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="frame">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/frame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 frame"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="frame/fast">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/frame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 frame/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="button">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/button" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 button"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="button/fast">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/button" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 button/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="minimal">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/minimal" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 minimal"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="minimal/fast">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/minimal" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 minimal/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hello_world">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/hello_world" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 hello_world"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hello_world/fast">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/hello_world" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 hello_world/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="two048">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/two048" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 two048"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="two048/fast">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/two048" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 two048/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="puzzle">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/puzzle" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 puzzle"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="puzzle/fast">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/puzzle" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 puzzle/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arc">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/arc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 arc"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="arc/fast">
+				<Option output="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/arc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/oussama/Desktop/projet_c_v6.0/include"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 arc/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/oussama/Desktop/projet_c_v6.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/src/ei_application.c">
+			<Option target="ei"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/src/ei_button.c">
+			<Option target="ei"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/src/ei_draw.c">
+			<Option target="ei"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/src/ei_draw_funct.c">
+			<Option target="ei"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/src/ei_fonction_auxiliaire.c">
+			<Option target="ei"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/src/ei_frame.c">
+			<Option target="ei"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/src/ei_placer.c">
+			<Option target="ei"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/src/ei_toplevel.c">
+			<Option target="ei"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/src/ei_widget.c">
+			<Option target="ei"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/src/ei_widgetclass.c">
+			<Option target="ei"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/tests/arc.c">
+			<Option target="text"/>
+			<Option target="button"/>
+			<Option target="arc"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/tests/button.c">
+			<Option target="button"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/tests/frame.c">
+			<Option target="frame"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/tests/hello_world.c">
+			<Option target="hello_world"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/tests/lines.c">
+			<Option target="lines"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/tests/minimal.c">
+			<Option target="minimal"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/tests/puzzle.c">
+			<Option target="puzzle"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/tests/two048.c">
+			<Option target="two048"/>
+		</Unit>
+		<Unit filename="/home/oussama/Desktop/projet_c_v6.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

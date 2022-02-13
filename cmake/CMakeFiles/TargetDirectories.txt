@@ -1,0 +1,11 @@
+/home/oussama/Desktop/projet_c_v6.0/cmake/CMakeFiles/rebuild_cache.dir
+/home/oussama/Desktop/projet_c_v6.0/cmake/CMakeFiles/two048.dir
+/home/oussama/Desktop/projet_c_v6.0/cmake/CMakeFiles/puzzle.dir
+/home/oussama/Desktop/projet_c_v6.0/cmake/CMakeFiles/hello_world.dir
+/home/oussama/Desktop/projet_c_v6.0/cmake/CMakeFiles/button.dir
+/home/oussama/Desktop/projet_c_v6.0/cmake/CMakeFiles/frame.dir
+/home/oussama/Desktop/projet_c_v6.0/cmake/CMakeFiles/lines.dir
+/home/oussama/Desktop/projet_c_v6.0/cmake/CMakeFiles/edit_cache.dir
+/home/oussama/Desktop/projet_c_v6.0/cmake/CMakeFiles/minimal.dir
+/home/oussama/Desktop/projet_c_v6.0/cmake/CMakeFiles/doc.dir
+/home/oussama/Desktop/projet_c_v6.0/cmake/CMakeFiles/ei.dir

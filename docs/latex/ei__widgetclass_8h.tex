@@ -1,0 +1,247 @@
+\hypertarget{ei__widgetclass_8h}{}\doxysection{ei\+\_\+widgetclass.\+h File Reference}
+\label{ei__widgetclass_8h}\index{ei\_widgetclass.h@{ei\_widgetclass.h}}
+{\ttfamily \#include \char`\"{}hw\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ei\+\_\+draw.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structei__widgetclass__t}{ei\+\_\+widgetclass\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em A structure that stores information about a class of widgets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef char \mbox{\hyperlink{ei__widgetclass_8h_acfa18ebbfac8cbbc11345a01c2099aed}{ei\+\_\+widgetclass\+\_\+name\+\_\+t}}\mbox{[}20\mbox{]}
+\begin{DoxyCompactList}\small\item\em A name of a class of widget. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$($\ast$ \mbox{\hyperlink{ei__widgetclass_8h_a3e0f7632913d9ce5d43d9dc3372e8009}{ei\+\_\+widgetclass\+\_\+allocfunc\+\_\+t}}) (void)
+\begin{DoxyCompactList}\small\item\em A function that allocates a block of memory that is big enough to store the attributes of a widget of a class. After allocation, the function {\itshape must} initialize the memory to 0. \end{DoxyCompactList}\item 
+typedef void($\ast$ \mbox{\hyperlink{ei__widgetclass_8h_a8fbcb8a5858722bd9454dc96b2c8f46c}{ei\+\_\+widgetclass\+\_\+releasefunc\+\_\+t}}) (struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em A function that releases the memory used by a widget before it is destroyed. The memory used for the \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} structure itself must {\itshape not} by freed by these functions. They free the {\itshape fields} of the structure, if necessary. Can be set to N\+U\+LL in \mbox{\hyperlink{structei__widgetclass__t}{ei\+\_\+widgetclass\+\_\+t}} if no memory is used by a class of widget. \end{DoxyCompactList}\item 
+typedef void($\ast$ \mbox{\hyperlink{ei__widgetclass_8h_a200aea6201a78fc8ec204791cfae6b47}{ei\+\_\+widgetclass\+\_\+drawfunc\+\_\+t}}) (struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$widget, \mbox{\hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\+\_\+surface\+\_\+t}} surface, \mbox{\hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\+\_\+surface\+\_\+t}} pick\+\_\+surface, \mbox{\hyperlink{structei__rect__t}{ei\+\_\+rect\+\_\+t}} $\ast$clipper)
+\begin{DoxyCompactList}\small\item\em A function that draws widgets of a class. \end{DoxyCompactList}\item 
+typedef void($\ast$ \mbox{\hyperlink{ei__widgetclass_8h_a6eb8e0ab7122c60cb5262a8cc72a3777}{ei\+\_\+widgetclass\+\_\+setdefaultsfunc\+\_\+t}}) (struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em A function that sets the default values for a class. \end{DoxyCompactList}\item 
+typedef void($\ast$ \mbox{\hyperlink{ei__widgetclass_8h_a61e618cc48a96d87fd3275530adc35e2}{ei\+\_\+widgetclass\+\_\+geomnotifyfunc\+\_\+t}}) (struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$widget, \mbox{\hyperlink{structei__rect__t}{ei\+\_\+rect\+\_\+t}} rect)
+\begin{DoxyCompactList}\small\item\em A function that is called to notify the widget that its geometry has been modified by its geometry manager. Can set to N\+U\+LL in \mbox{\hyperlink{structei__widgetclass__t}{ei\+\_\+widgetclass\+\_\+t}}. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\+\_\+bool\+\_\+t}}($\ast$ \mbox{\hyperlink{ei__widgetclass_8h_a480d59667e6726294cd961accf180241}{ei\+\_\+widgetclass\+\_\+handlefunc\+\_\+t}}) (struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$widget, struct \mbox{\hyperlink{structei__event__t}{ei\+\_\+event\+\_\+t}} $\ast$event)
+\begin{DoxyCompactList}\small\item\em A function that is called in response to an event. This function is internal to the library. It implements the generic behavior of a widget (for example a button looks sunken when clicked) \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structei__widgetclass__t}{ei\+\_\+widgetclass\+\_\+t}} \mbox{\hyperlink{ei__widgetclass_8h_ae1d8377c551170bc9e27d2f08162781e}{ei\+\_\+widgetclass\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em A structure that stores information about a class of widgets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static char $\ast$ \mbox{\hyperlink{ei__widgetclass_8h_acc2ce779c0b1e7524e29bfc8e3641fad}{ei\+\_\+widgetclass\+\_\+stringname}} (\mbox{\hyperlink{ei__widgetclass_8h_acfa18ebbfac8cbbc11345a01c2099aed}{ei\+\_\+widgetclass\+\_\+name\+\_\+t}} name)
+\begin{DoxyCompactList}\small\item\em Returns the string of the name of a class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ei__widgetclass_8h_af742f16921cbf9c4a1a662ade31d91cc}{ei\+\_\+widgetclass\+\_\+register}} (\mbox{\hyperlink{structei__widgetclass__t}{ei\+\_\+widgetclass\+\_\+t}} $\ast$widgetclass)
+\begin{DoxyCompactList}\small\item\em Registers a class to the program so that widgets of this class can be created. This must be done only once per widged class in the application. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structei__widgetclass__t}{ei\+\_\+widgetclass\+\_\+t}} $\ast$ \mbox{\hyperlink{ei__widgetclass_8h_a00f3c7506df390ca8a5b52d8b386bced}{ei\+\_\+widgetclass\+\_\+from\+\_\+name}} (\mbox{\hyperlink{ei__widgetclass_8h_acfa18ebbfac8cbbc11345a01c2099aed}{ei\+\_\+widgetclass\+\_\+name\+\_\+t}} name)
+\begin{DoxyCompactList}\small\item\em Returns the structure describing a class, from its name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{ei__widgetclass_8h_a3e0f7632913d9ce5d43d9dc3372e8009}\label{ei__widgetclass_8h_a3e0f7632913d9ce5d43d9dc3372e8009}} 
+\index{ei\_widgetclass.h@{ei\_widgetclass.h}!ei\_widgetclass\_allocfunc\_t@{ei\_widgetclass\_allocfunc\_t}}
+\index{ei\_widgetclass\_allocfunc\_t@{ei\_widgetclass\_allocfunc\_t}!ei\_widgetclass.h@{ei\_widgetclass.h}}
+\doxysubsubsection{\texorpdfstring{ei\_widgetclass\_allocfunc\_t}{ei\_widgetclass\_allocfunc\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}}$\ast$($\ast$ ei\+\_\+widgetclass\+\_\+allocfunc\+\_\+t) (void)}
+
+
+
+A function that allocates a block of memory that is big enough to store the attributes of a widget of a class. After allocation, the function {\itshape must} initialize the memory to 0. 
+
+\begin{DoxyReturn}{Returns}
+A block of memory with all bytes set to 0. 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file ei\+\_\+widgetclass.\+h.
+
+\mbox{\Hypertarget{ei__widgetclass_8h_a200aea6201a78fc8ec204791cfae6b47}\label{ei__widgetclass_8h_a200aea6201a78fc8ec204791cfae6b47}} 
+\index{ei\_widgetclass.h@{ei\_widgetclass.h}!ei\_widgetclass\_drawfunc\_t@{ei\_widgetclass\_drawfunc\_t}}
+\index{ei\_widgetclass\_drawfunc\_t@{ei\_widgetclass\_drawfunc\_t}!ei\_widgetclass.h@{ei\_widgetclass.h}}
+\doxysubsubsection{\texorpdfstring{ei\_widgetclass\_drawfunc\_t}{ei\_widgetclass\_drawfunc\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ ei\+\_\+widgetclass\+\_\+drawfunc\+\_\+t) (struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$widget, \mbox{\hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\+\_\+surface\+\_\+t}} surface, \mbox{\hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\+\_\+surface\+\_\+t}} pick\+\_\+surface, \mbox{\hyperlink{structei__rect__t}{ei\+\_\+rect\+\_\+t}} $\ast$clipper)}
+
+
+
+A function that draws widgets of a class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & A pointer to the widget instance to draw. \\
+\hline
+{\em surface} & Where to draw the widget. The actual location of the widget in the surface is stored in its \char`\"{}screen\+\_\+location\char`\"{} field. \\
+\hline
+{\em pick\+\_\+surface} & The picking offscreen. \\
+\hline
+{\em clipper} & If not N\+U\+LL, the drawing is restricted within this rectangle (expressed in the surface reference frame). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 56 of file ei\+\_\+widgetclass.\+h.
+
+\mbox{\Hypertarget{ei__widgetclass_8h_a61e618cc48a96d87fd3275530adc35e2}\label{ei__widgetclass_8h_a61e618cc48a96d87fd3275530adc35e2}} 
+\index{ei\_widgetclass.h@{ei\_widgetclass.h}!ei\_widgetclass\_geomnotifyfunc\_t@{ei\_widgetclass\_geomnotifyfunc\_t}}
+\index{ei\_widgetclass\_geomnotifyfunc\_t@{ei\_widgetclass\_geomnotifyfunc\_t}!ei\_widgetclass.h@{ei\_widgetclass.h}}
+\doxysubsubsection{\texorpdfstring{ei\_widgetclass\_geomnotifyfunc\_t}{ei\_widgetclass\_geomnotifyfunc\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ ei\+\_\+widgetclass\+\_\+geomnotifyfunc\+\_\+t) (struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$widget, \mbox{\hyperlink{structei__rect__t}{ei\+\_\+rect\+\_\+t}} rect)}
+
+
+
+A function that is called to notify the widget that its geometry has been modified by its geometry manager. Can set to N\+U\+LL in \mbox{\hyperlink{structei__widgetclass__t}{ei\+\_\+widgetclass\+\_\+t}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget instance to notify of a geometry change. \\
+\hline
+{\em rect} & The new rectangular screen location of the widget (i.\+e. = widget-\/$>$screen\+\_\+location). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 76 of file ei\+\_\+widgetclass.\+h.
+
+\mbox{\Hypertarget{ei__widgetclass_8h_a480d59667e6726294cd961accf180241}\label{ei__widgetclass_8h_a480d59667e6726294cd961accf180241}} 
+\index{ei\_widgetclass.h@{ei\_widgetclass.h}!ei\_widgetclass\_handlefunc\_t@{ei\_widgetclass\_handlefunc\_t}}
+\index{ei\_widgetclass\_handlefunc\_t@{ei\_widgetclass\_handlefunc\_t}!ei\_widgetclass.h@{ei\_widgetclass.h}}
+\doxysubsubsection{\texorpdfstring{ei\_widgetclass\_handlefunc\_t}{ei\_widgetclass\_handlefunc\_t}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\+\_\+bool\+\_\+t}}($\ast$ ei\+\_\+widgetclass\+\_\+handlefunc\+\_\+t) (struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$widget, struct \mbox{\hyperlink{structei__event__t}{ei\+\_\+event\+\_\+t}} $\ast$event)}
+
+
+
+A function that is called in response to an event. This function is internal to the library. It implements the generic behavior of a widget (for example a button looks sunken when clicked) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget for which the event was generated. \\
+\hline
+{\em event} & The event containing all its parameters (type, etc.)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean telling if the event was consumed by the callback or not. If T\+R\+UE, the library does not try to call other callbacks for this event. If F\+A\+L\+SE, the library will call the next callback registered for this event, if any. Note\+: The callback may execute many operations and still return F\+A\+L\+SE, or return T\+R\+UE without having done anything. 
+\end{DoxyReturn}
+
+
+Definition at line 96 of file ei\+\_\+widgetclass.\+h.
+
+\mbox{\Hypertarget{ei__widgetclass_8h_acfa18ebbfac8cbbc11345a01c2099aed}\label{ei__widgetclass_8h_acfa18ebbfac8cbbc11345a01c2099aed}} 
+\index{ei\_widgetclass.h@{ei\_widgetclass.h}!ei\_widgetclass\_name\_t@{ei\_widgetclass\_name\_t}}
+\index{ei\_widgetclass\_name\_t@{ei\_widgetclass\_name\_t}!ei\_widgetclass.h@{ei\_widgetclass.h}}
+\doxysubsubsection{\texorpdfstring{ei\_widgetclass\_name\_t}{ei\_widgetclass\_name\_t}}
+{\footnotesize\ttfamily typedef char ei\+\_\+widgetclass\+\_\+name\+\_\+t\mbox{[}20\mbox{]}}
+
+
+
+A name of a class of widget. 
+
+
+
+Definition at line 23 of file ei\+\_\+widgetclass.\+h.
+
+\mbox{\Hypertarget{ei__widgetclass_8h_a8fbcb8a5858722bd9454dc96b2c8f46c}\label{ei__widgetclass_8h_a8fbcb8a5858722bd9454dc96b2c8f46c}} 
+\index{ei\_widgetclass.h@{ei\_widgetclass.h}!ei\_widgetclass\_releasefunc\_t@{ei\_widgetclass\_releasefunc\_t}}
+\index{ei\_widgetclass\_releasefunc\_t@{ei\_widgetclass\_releasefunc\_t}!ei\_widgetclass.h@{ei\_widgetclass.h}}
+\doxysubsubsection{\texorpdfstring{ei\_widgetclass\_releasefunc\_t}{ei\_widgetclass\_releasefunc\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ ei\+\_\+widgetclass\+\_\+releasefunc\+\_\+t) (struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$widget)}
+
+
+
+A function that releases the memory used by a widget before it is destroyed. The memory used for the \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} structure itself must {\itshape not} by freed by these functions. They free the {\itshape fields} of the structure, if necessary. Can be set to N\+U\+LL in \mbox{\hyperlink{structei__widgetclass__t}{ei\+\_\+widgetclass\+\_\+t}} if no memory is used by a class of widget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget which resources are to be freed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file ei\+\_\+widgetclass.\+h.
+
+\mbox{\Hypertarget{ei__widgetclass_8h_a6eb8e0ab7122c60cb5262a8cc72a3777}\label{ei__widgetclass_8h_a6eb8e0ab7122c60cb5262a8cc72a3777}} 
+\index{ei\_widgetclass.h@{ei\_widgetclass.h}!ei\_widgetclass\_setdefaultsfunc\_t@{ei\_widgetclass\_setdefaultsfunc\_t}}
+\index{ei\_widgetclass\_setdefaultsfunc\_t@{ei\_widgetclass\_setdefaultsfunc\_t}!ei\_widgetclass.h@{ei\_widgetclass.h}}
+\doxysubsubsection{\texorpdfstring{ei\_widgetclass\_setdefaultsfunc\_t}{ei\_widgetclass\_setdefaultsfunc\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ ei\+\_\+widgetclass\+\_\+setdefaultsfunc\+\_\+t) (struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$widget)}
+
+
+
+A function that sets the default values for a class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & A pointer to the widget instance to intialize. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 66 of file ei\+\_\+widgetclass.\+h.
+
+\mbox{\Hypertarget{ei__widgetclass_8h_ae1d8377c551170bc9e27d2f08162781e}\label{ei__widgetclass_8h_ae1d8377c551170bc9e27d2f08162781e}} 
+\index{ei\_widgetclass.h@{ei\_widgetclass.h}!ei\_widgetclass\_t@{ei\_widgetclass\_t}}
+\index{ei\_widgetclass\_t@{ei\_widgetclass\_t}!ei\_widgetclass.h@{ei\_widgetclass.h}}
+\doxysubsubsection{\texorpdfstring{ei\_widgetclass\_t}{ei\_widgetclass\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structei__widgetclass__t}{ei\+\_\+widgetclass\+\_\+t}} \mbox{\hyperlink{structei__widgetclass__t}{ei\+\_\+widgetclass\+\_\+t}}}
+
+
+
+A structure that stores information about a class of widgets. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ei__widgetclass_8h_a00f3c7506df390ca8a5b52d8b386bced}\label{ei__widgetclass_8h_a00f3c7506df390ca8a5b52d8b386bced}} 
+\index{ei\_widgetclass.h@{ei\_widgetclass.h}!ei\_widgetclass\_from\_name@{ei\_widgetclass\_from\_name}}
+\index{ei\_widgetclass\_from\_name@{ei\_widgetclass\_from\_name}!ei\_widgetclass.h@{ei\_widgetclass.h}}
+\doxysubsubsection{\texorpdfstring{ei\_widgetclass\_from\_name()}{ei\_widgetclass\_from\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structei__widgetclass__t}{ei\+\_\+widgetclass\+\_\+t}}$\ast$ ei\+\_\+widgetclass\+\_\+from\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ei__widgetclass_8h_acfa18ebbfac8cbbc11345a01c2099aed}{ei\+\_\+widgetclass\+\_\+name\+\_\+t}}}]{name }\end{DoxyParamCaption})}
+
+
+
+Returns the structure describing a class, from its name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the class of widget.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The structure describing the class. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ei__widgetclass_8h_af742f16921cbf9c4a1a662ade31d91cc}\label{ei__widgetclass_8h_af742f16921cbf9c4a1a662ade31d91cc}} 
+\index{ei\_widgetclass.h@{ei\_widgetclass.h}!ei\_widgetclass\_register@{ei\_widgetclass\_register}}
+\index{ei\_widgetclass\_register@{ei\_widgetclass\_register}!ei\_widgetclass.h@{ei\_widgetclass.h}}
+\doxysubsubsection{\texorpdfstring{ei\_widgetclass\_register()}{ei\_widgetclass\_register()}}
+{\footnotesize\ttfamily void ei\+\_\+widgetclass\+\_\+register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structei__widgetclass__t}{ei\+\_\+widgetclass\+\_\+t}} $\ast$}]{widgetclass }\end{DoxyParamCaption})}
+
+
+
+Registers a class to the program so that widgets of this class can be created. This must be done only once per widged class in the application. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widgetclass} & The structure describing the class. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ei__widgetclass_8h_acc2ce779c0b1e7524e29bfc8e3641fad}\label{ei__widgetclass_8h_acc2ce779c0b1e7524e29bfc8e3641fad}} 
+\index{ei\_widgetclass.h@{ei\_widgetclass.h}!ei\_widgetclass\_stringname@{ei\_widgetclass\_stringname}}
+\index{ei\_widgetclass\_stringname@{ei\_widgetclass\_stringname}!ei\_widgetclass.h@{ei\_widgetclass.h}}
+\doxysubsubsection{\texorpdfstring{ei\_widgetclass\_stringname()}{ei\_widgetclass\_stringname()}}
+{\footnotesize\ttfamily static char$\ast$ ei\+\_\+widgetclass\+\_\+stringname (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ei__widgetclass_8h_acfa18ebbfac8cbbc11345a01c2099aed}{ei\+\_\+widgetclass\+\_\+name\+\_\+t}}}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the string of the name of a class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The class name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string representing the name of the class. 
+\end{DoxyReturn}
+
+
+Definition at line 125 of file ei\+\_\+widgetclass.\+h.
+

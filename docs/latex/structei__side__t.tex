@@ -1,0 +1,90 @@
+\hypertarget{structei__side__t}{}\doxysection{ei\+\_\+side\+\_\+t Struct Reference}
+\label{structei__side__t}\index{ei\_side\_t@{ei\_side\_t}}
+
+
+Un côté du polygone\+:  
+
+
+
+
+{\ttfamily \#include $<$ei\+\_\+draw.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structei__side__t_a5de17b12f170208958000c58bf80f82d}{ymax}}
+\item 
+int \mbox{\hyperlink{structei__side__t_a2535eef3c0038f1bff00aaa21c22eadf}{xymin}}
+\item 
+float \mbox{\hyperlink{structei__side__t_a24cb3760ea447215311234f777ca9b82}{inv\+\_\+pente}}
+\item 
+struct \mbox{\hyperlink{structei__side__t}{ei\+\_\+side\+\_\+t}} $\ast$ \mbox{\hyperlink{structei__side__t_a0a0dfa398ff9844e21d6b24728e3b3c9}{side\+\_\+ptr}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Un côté du polygone\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ymax} & Le numéro de scanline à partir de laquelle le côté n’aura plus d’intersection. \\
+\hline
+{\em xymin} & L’abscisse de l’intersection du côté avec la première scanline qui intersecte ce côté. Elle sera mise à jour à chaque nouvelle scanline. \\
+\hline
+{\em bres\+\_\+par} & Les paramètres du côté pour l’algorithme de Bresenham \+: E, $\vert$∆x$\vert$, $\vert$∆y$\vert$. \\
+\hline
+{\em cote\+\_\+ptr} & Un pointeur vers une autre structure représentant un côté. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file ei\+\_\+draw.\+h.
+
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{structei__side__t_a24cb3760ea447215311234f777ca9b82}\label{structei__side__t_a24cb3760ea447215311234f777ca9b82}} 
+\index{ei\_side\_t@{ei\_side\_t}!inv\_pente@{inv\_pente}}
+\index{inv\_pente@{inv\_pente}!ei\_side\_t@{ei\_side\_t}}
+\doxysubsubsection{\texorpdfstring{inv\_pente}{inv\_pente}}
+{\footnotesize\ttfamily float ei\+\_\+side\+\_\+t\+::inv\+\_\+pente}
+
+
+
+Definition at line 47 of file ei\+\_\+draw.\+h.
+
+\mbox{\Hypertarget{structei__side__t_a0a0dfa398ff9844e21d6b24728e3b3c9}\label{structei__side__t_a0a0dfa398ff9844e21d6b24728e3b3c9}} 
+\index{ei\_side\_t@{ei\_side\_t}!side\_ptr@{side\_ptr}}
+\index{side\_ptr@{side\_ptr}!ei\_side\_t@{ei\_side\_t}}
+\doxysubsubsection{\texorpdfstring{side\_ptr}{side\_ptr}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structei__side__t}{ei\+\_\+side\+\_\+t}}$\ast$ ei\+\_\+side\+\_\+t\+::side\+\_\+ptr}
+
+
+
+Definition at line 48 of file ei\+\_\+draw.\+h.
+
+\mbox{\Hypertarget{structei__side__t_a2535eef3c0038f1bff00aaa21c22eadf}\label{structei__side__t_a2535eef3c0038f1bff00aaa21c22eadf}} 
+\index{ei\_side\_t@{ei\_side\_t}!xymin@{xymin}}
+\index{xymin@{xymin}!ei\_side\_t@{ei\_side\_t}}
+\doxysubsubsection{\texorpdfstring{xymin}{xymin}}
+{\footnotesize\ttfamily int ei\+\_\+side\+\_\+t\+::xymin}
+
+
+
+Definition at line 46 of file ei\+\_\+draw.\+h.
+
+\mbox{\Hypertarget{structei__side__t_a5de17b12f170208958000c58bf80f82d}\label{structei__side__t_a5de17b12f170208958000c58bf80f82d}} 
+\index{ei\_side\_t@{ei\_side\_t}!ymax@{ymax}}
+\index{ymax@{ymax}!ei\_side\_t@{ei\_side\_t}}
+\doxysubsubsection{\texorpdfstring{ymax}{ymax}}
+{\footnotesize\ttfamily int ei\+\_\+side\+\_\+t\+::ymax}
+
+
+
+Definition at line 45 of file ei\+\_\+draw.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ei__draw_8h}{ei\+\_\+draw.\+h}}\end{DoxyCompactItemize}

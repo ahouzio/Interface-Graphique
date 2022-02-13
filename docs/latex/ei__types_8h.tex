@@ -1,0 +1,369 @@
+\hypertarget{ei__types_8h}{}\doxysection{ei\+\_\+types.\+h File Reference}
+\label{ei__types_8h}\index{ei\_types.h@{ei\_types.h}}
+
+
+Type, constant, and global definitions for the ei library.  
+
+
+{\ttfamily \#include \char`\"{}S\+D\+L\+\_\+keycode.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structei__point__t}{ei\+\_\+point\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em A 2-\/D point with integer coordinates. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structei__size__t}{ei\+\_\+size\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em A 2-\/D size with integer dimensions. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structei__rect__t}{ei\+\_\+rect\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em A rectangle defined by its top-\/left corner, and its size. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structei__linked__rect__t}{ei\+\_\+linked\+\_\+rect\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em A rectangle plus a pointer to create a linked list. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structei__linked__point__t}{ei\+\_\+linked\+\_\+point\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em A point plus a pointer to create a linked list. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structei__color__t}{ei\+\_\+color\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em A color with transparency. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structei__linked__rect__t}{ei\+\_\+linked\+\_\+rect\+\_\+t}} \mbox{\hyperlink{ei__types_8h_aff2e61ae4d40b4534542471a2fe3bc96}{ei\+\_\+linked\+\_\+rect\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em A rectangle plus a pointer to create a linked list. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structei__linked__point__t}{ei\+\_\+linked\+\_\+point\+\_\+t}} \mbox{\hyperlink{ei__types_8h_a6a1357514f18c33efd23fbe6d050bb29}{ei\+\_\+linked\+\_\+point\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em A point plus a pointer to create a linked list. \end{DoxyCompactList}\item 
+typedef void $\ast$ \mbox{\hyperlink{ei__types_8h_a22c8198e4d641e4bc67bb17f9c6bcda7}{ei\+\_\+font\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em An opaque type for handling fonts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\+\_\+bool\+\_\+t}} \{ \mbox{\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28ad2686863dafff40367aabad2dfdf17db}{E\+I\+\_\+\+F\+A\+L\+SE}} = 0, 
+\mbox{\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28a26fdc833ef14f44fa15d81522b6802ec}{E\+I\+\_\+\+T\+R\+UE}} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em The boolean type used in the library. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450}{ei\+\_\+anchor\+\_\+t}} \{ \newline
+\mbox{\hyperlink{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450a00688941d6793b4165bbc56edb70646a}{ei\+\_\+anc\+\_\+none}} = 0, 
+\mbox{\hyperlink{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450a5704b2469014b3e93fbdb0b297ed92b0}{ei\+\_\+anc\+\_\+center}}, 
+\mbox{\hyperlink{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450abb9d5dcbb25572cab716280dbe72014d}{ei\+\_\+anc\+\_\+north}}, 
+\mbox{\hyperlink{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450af4ba72d1581a2e133eaeb6c00c912cff}{ei\+\_\+anc\+\_\+northeast}}, 
+\newline
+\mbox{\hyperlink{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450ac60193e3f00916df2272dee7b33c1143}{ei\+\_\+anc\+\_\+east}}, 
+\mbox{\hyperlink{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450ac6ab86aaa5a6f70cf4a49ed317686c7e}{ei\+\_\+anc\+\_\+southeast}}, 
+\mbox{\hyperlink{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450a912ba0dd51dde60a610fbce211cf1b35}{ei\+\_\+anc\+\_\+south}}, 
+\mbox{\hyperlink{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450a200959a22ba17a83310a97570f62f392}{ei\+\_\+anc\+\_\+southwest}}, 
+\newline
+\mbox{\hyperlink{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450af260d86ff3940d57139f0f8de9488512}{ei\+\_\+anc\+\_\+west}}, 
+\mbox{\hyperlink{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450a696c63e5bb8cab534cdf59d9a97f836b}{ei\+\_\+anc\+\_\+northwest}}
+ \}
+\begin{DoxyCompactList}\small\item\em Identifies one particular point of a rectangle. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{ei__types_8h_aa79a32b1d8ece0e44cfa394e870b270b}{ei\+\_\+relief\+\_\+t}} \{ \mbox{\hyperlink{ei__types_8h_aa79a32b1d8ece0e44cfa394e870b270ba105222bc995071e84bce027c90a59b62}{ei\+\_\+relief\+\_\+none}} = 0, 
+\mbox{\hyperlink{ei__types_8h_aa79a32b1d8ece0e44cfa394e870b270bac1e7867185743599ffcceb42784bd4e3}{ei\+\_\+relief\+\_\+raised}}, 
+\mbox{\hyperlink{ei__types_8h_aa79a32b1d8ece0e44cfa394e870b270ba227a7ad58efd20f955450357c0bd4b36}{ei\+\_\+relief\+\_\+sunken}}
+ \}
+\begin{DoxyCompactList}\small\item\em Type of relief. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439}{ei\+\_\+axis\+\_\+set\+\_\+t}} \{ \mbox{\hyperlink{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439ae34dee3f21cd76dae607d8334d3bab50}{ei\+\_\+axis\+\_\+none}} = 0, 
+\mbox{\hyperlink{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439a7a26f78919e1c485e2270b9f5a7271bf}{ei\+\_\+axis\+\_\+x}}, 
+\mbox{\hyperlink{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439af3316aa4c9c58d8e451a9a1c8a72e38d}{ei\+\_\+axis\+\_\+y}}, 
+\mbox{\hyperlink{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439a6e6ffa2a8d854858429d6f54d94919a9}{ei\+\_\+axis\+\_\+both}}
+ \}
+\begin{DoxyCompactList}\small\item\em Set of axis. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{ei__types_8h_a2438d9879374e1d4805231e9e407bbae}{ei\+\_\+fontstyle\+\_\+t}} \{ \newline
+\mbox{\hyperlink{ei__types_8h_a2438d9879374e1d4805231e9e407bbaea9754cb1e12731d6a7697daa5678ebf72}{ei\+\_\+style\+\_\+normal}} = 0, 
+\mbox{\hyperlink{ei__types_8h_a2438d9879374e1d4805231e9e407bbaeae551566e11a4b61b5227939c0a3f1bc5}{ei\+\_\+style\+\_\+bold}} = 1, 
+\mbox{\hyperlink{ei__types_8h_a2438d9879374e1d4805231e9e407bbaeae96fec919cf8a425b35882b4686bd0ea}{ei\+\_\+style\+\_\+italic}} = 2, 
+\mbox{\hyperlink{ei__types_8h_a2438d9879374e1d4805231e9e407bbaea0daa1f570b16879f3e5f70c4a6071cdd}{ei\+\_\+style\+\_\+underline}} = 4, 
+\newline
+\mbox{\hyperlink{ei__types_8h_a2438d9879374e1d4805231e9e407bbaea3a61c992dfbee07d608647f74f67aa64}{ei\+\_\+style\+\_\+strikethrough}} = 8
+ \}
+\begin{DoxyCompactList}\small\item\em Font style. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{structei__color__t}{ei\+\_\+color\+\_\+t}} \mbox{\hyperlink{ei__types_8h_a00dfca48550b7224f2d8011497b9fd8c}{ei\+\_\+default\+\_\+background\+\_\+color}} = \{ 0x\+A0, 0x\+A0, 0x\+A0, 0xff \}
+\begin{DoxyCompactList}\small\item\em The default background color of widgets. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{ei__types_8h_a22c8198e4d641e4bc67bb17f9c6bcda7}{ei\+\_\+font\+\_\+t}} \mbox{\hyperlink{ei__types_8h_a722bfa1a8a9a4202fb2d4abce2f06a8c}{ei\+\_\+default\+\_\+font}}
+\begin{DoxyCompactList}\small\item\em The default font used in widgets. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{ei__types_8h_a157b1b2a04132b2ac00400b202b134de}{ei\+\_\+font\+\_\+default\+\_\+size}} = 22
+\item 
+static const \mbox{\hyperlink{structei__color__t}{ei\+\_\+color\+\_\+t}} \mbox{\hyperlink{ei__types_8h_adc5dd1241a145ff097f2c01dd6ab13af}{ei\+\_\+font\+\_\+default\+\_\+color}} = \{ 0x00, 0x00, 0x00, 0xff \}
+\item 
+static const char \mbox{\hyperlink{ei__types_8h_aa888e6bf1302563264631d781918f6d6}{ei\+\_\+default\+\_\+font\+\_\+filename}} \mbox{[}$\,$\mbox{]} = \char`\"{}misc/font.\+ttf\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Type, constant, and global definitions for the ei library. 
+
+Created by François Bérard on 18.\+12.\+11. Copyright 2011 Ensimag. All rights reserved. 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{ei__types_8h_a22c8198e4d641e4bc67bb17f9c6bcda7}\label{ei__types_8h_a22c8198e4d641e4bc67bb17f9c6bcda7}} 
+\index{ei\_types.h@{ei\_types.h}!ei\_font\_t@{ei\_font\_t}}
+\index{ei\_font\_t@{ei\_font\_t}!ei\_types.h@{ei\_types.h}}
+\doxysubsubsection{\texorpdfstring{ei\_font\_t}{ei\_font\_t}}
+{\footnotesize\ttfamily typedef void$\ast$ \mbox{\hyperlink{ei__types_8h_a22c8198e4d641e4bc67bb17f9c6bcda7}{ei\+\_\+font\+\_\+t}}}
+
+
+
+An opaque type for handling fonts. 
+
+\begin{DoxyVerb}    Fonts are created by calling \ref hw_text_font_create and released by calling
+    \ref hw_text_font_free.
+\end{DoxyVerb}
+ 
+
+Definition at line 154 of file ei\+\_\+types.\+h.
+
+\mbox{\Hypertarget{ei__types_8h_a6a1357514f18c33efd23fbe6d050bb29}\label{ei__types_8h_a6a1357514f18c33efd23fbe6d050bb29}} 
+\index{ei\_types.h@{ei\_types.h}!ei\_linked\_point\_t@{ei\_linked\_point\_t}}
+\index{ei\_linked\_point\_t@{ei\_linked\_point\_t}!ei\_types.h@{ei\_types.h}}
+\doxysubsubsection{\texorpdfstring{ei\_linked\_point\_t}{ei\_linked\_point\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structei__linked__point__t}{ei\+\_\+linked\+\_\+point\+\_\+t}} \mbox{\hyperlink{structei__linked__point__t}{ei\+\_\+linked\+\_\+point\+\_\+t}}}
+
+
+
+A point plus a pointer to create a linked list. 
+
+\mbox{\Hypertarget{ei__types_8h_aff2e61ae4d40b4534542471a2fe3bc96}\label{ei__types_8h_aff2e61ae4d40b4534542471a2fe3bc96}} 
+\index{ei\_types.h@{ei\_types.h}!ei\_linked\_rect\_t@{ei\_linked\_rect\_t}}
+\index{ei\_linked\_rect\_t@{ei\_linked\_rect\_t}!ei\_types.h@{ei\_types.h}}
+\doxysubsubsection{\texorpdfstring{ei\_linked\_rect\_t}{ei\_linked\_rect\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structei__linked__rect__t}{ei\+\_\+linked\+\_\+rect\+\_\+t}} \mbox{\hyperlink{structei__linked__rect__t}{ei\+\_\+linked\+\_\+rect\+\_\+t}}}
+
+
+
+A rectangle plus a pointer to create a linked list. 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450}\label{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450}} 
+\index{ei\_types.h@{ei\_types.h}!ei\_anchor\_t@{ei\_anchor\_t}}
+\index{ei\_anchor\_t@{ei\_anchor\_t}!ei\_types.h@{ei\_types.h}}
+\doxysubsubsection{\texorpdfstring{ei\_anchor\_t}{ei\_anchor\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450}{ei\+\_\+anchor\+\_\+t}}}
+
+
+
+Identifies one particular point of a rectangle. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_anc\_none@{ei\_anc\_none}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_anc\_none@{ei\_anc\_none}}}\mbox{\Hypertarget{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450a00688941d6793b4165bbc56edb70646a}\label{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450a00688941d6793b4165bbc56edb70646a}} 
+ei\+\_\+anc\+\_\+none&No anchor defined. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_anc\_center@{ei\_anc\_center}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_anc\_center@{ei\_anc\_center}}}\mbox{\Hypertarget{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450a5704b2469014b3e93fbdb0b297ed92b0}\label{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450a5704b2469014b3e93fbdb0b297ed92b0}} 
+ei\+\_\+anc\+\_\+center&Anchor in the center. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_anc\_north@{ei\_anc\_north}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_anc\_north@{ei\_anc\_north}}}\mbox{\Hypertarget{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450abb9d5dcbb25572cab716280dbe72014d}\label{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450abb9d5dcbb25572cab716280dbe72014d}} 
+ei\+\_\+anc\+\_\+north&Anchor on the top side, centered horizontally. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_anc\_northeast@{ei\_anc\_northeast}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_anc\_northeast@{ei\_anc\_northeast}}}\mbox{\Hypertarget{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450af4ba72d1581a2e133eaeb6c00c912cff}\label{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450af4ba72d1581a2e133eaeb6c00c912cff}} 
+ei\+\_\+anc\+\_\+northeast&Anchor on the top-\/right corner. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_anc\_east@{ei\_anc\_east}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_anc\_east@{ei\_anc\_east}}}\mbox{\Hypertarget{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450ac60193e3f00916df2272dee7b33c1143}\label{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450ac60193e3f00916df2272dee7b33c1143}} 
+ei\+\_\+anc\+\_\+east&Anchor on the right side, centered vertically. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_anc\_southeast@{ei\_anc\_southeast}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_anc\_southeast@{ei\_anc\_southeast}}}\mbox{\Hypertarget{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450ac6ab86aaa5a6f70cf4a49ed317686c7e}\label{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450ac6ab86aaa5a6f70cf4a49ed317686c7e}} 
+ei\+\_\+anc\+\_\+southeast&Anchor on the bottom-\/right corner. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_anc\_south@{ei\_anc\_south}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_anc\_south@{ei\_anc\_south}}}\mbox{\Hypertarget{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450a912ba0dd51dde60a610fbce211cf1b35}\label{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450a912ba0dd51dde60a610fbce211cf1b35}} 
+ei\+\_\+anc\+\_\+south&Anchor on the bottom side, centered horizontally. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_anc\_southwest@{ei\_anc\_southwest}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_anc\_southwest@{ei\_anc\_southwest}}}\mbox{\Hypertarget{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450a200959a22ba17a83310a97570f62f392}\label{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450a200959a22ba17a83310a97570f62f392}} 
+ei\+\_\+anc\+\_\+southwest&Anchor on the bottom-\/left corner. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_anc\_west@{ei\_anc\_west}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_anc\_west@{ei\_anc\_west}}}\mbox{\Hypertarget{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450af260d86ff3940d57139f0f8de9488512}\label{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450af260d86ff3940d57139f0f8de9488512}} 
+ei\+\_\+anc\+\_\+west&Anchor on the left side, centered vertically. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_anc\_northwest@{ei\_anc\_northwest}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_anc\_northwest@{ei\_anc\_northwest}}}\mbox{\Hypertarget{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450a696c63e5bb8cab534cdf59d9a97f836b}\label{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450a696c63e5bb8cab534cdf59d9a97f836b}} 
+ei\+\_\+anc\+\_\+northwest&Anchor on the top-\/left corner. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 95 of file ei\+\_\+types.\+h.
+
+\mbox{\Hypertarget{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439}\label{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439}} 
+\index{ei\_types.h@{ei\_types.h}!ei\_axis\_set\_t@{ei\_axis\_set\_t}}
+\index{ei\_axis\_set\_t@{ei\_axis\_set\_t}!ei\_types.h@{ei\_types.h}}
+\doxysubsubsection{\texorpdfstring{ei\_axis\_set\_t}{ei\_axis\_set\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439}{ei\+\_\+axis\+\_\+set\+\_\+t}}}
+
+
+
+Set of axis. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_axis\_none@{ei\_axis\_none}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_axis\_none@{ei\_axis\_none}}}\mbox{\Hypertarget{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439ae34dee3f21cd76dae607d8334d3bab50}\label{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439ae34dee3f21cd76dae607d8334d3bab50}} 
+ei\+\_\+axis\+\_\+none&No axis. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_axis\_x@{ei\_axis\_x}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_axis\_x@{ei\_axis\_x}}}\mbox{\Hypertarget{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439a7a26f78919e1c485e2270b9f5a7271bf}\label{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439a7a26f78919e1c485e2270b9f5a7271bf}} 
+ei\+\_\+axis\+\_\+x&Horizontal axis. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_axis\_y@{ei\_axis\_y}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_axis\_y@{ei\_axis\_y}}}\mbox{\Hypertarget{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439af3316aa4c9c58d8e451a9a1c8a72e38d}\label{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439af3316aa4c9c58d8e451a9a1c8a72e38d}} 
+ei\+\_\+axis\+\_\+y&Vertical axis. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_axis\_both@{ei\_axis\_both}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_axis\_both@{ei\_axis\_both}}}\mbox{\Hypertarget{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439a6e6ffa2a8d854858429d6f54d94919a9}\label{ei__types_8h_ab5d9ff46ba9b2c9fa6d6fbd2594c6439a6e6ffa2a8d854858429d6f54d94919a9}} 
+ei\+\_\+axis\+\_\+both&Both horizontal and vertical axis. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 120 of file ei\+\_\+types.\+h.
+
+\mbox{\Hypertarget{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}\label{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}} 
+\index{ei\_types.h@{ei\_types.h}!ei\_bool\_t@{ei\_bool\_t}}
+\index{ei\_bool\_t@{ei\_bool\_t}!ei\_types.h@{ei\_types.h}}
+\doxysubsubsection{\texorpdfstring{ei\_bool\_t}{ei\_bool\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\+\_\+bool\+\_\+t}}}
+
+
+
+The boolean type used in the library. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EI\_FALSE@{EI\_FALSE}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!EI\_FALSE@{EI\_FALSE}}}\mbox{\Hypertarget{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28ad2686863dafff40367aabad2dfdf17db}\label{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28ad2686863dafff40367aabad2dfdf17db}} 
+E\+I\+\_\+\+F\+A\+L\+SE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EI\_TRUE@{EI\_TRUE}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!EI\_TRUE@{EI\_TRUE}}}\mbox{\Hypertarget{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28a26fdc833ef14f44fa15d81522b6802ec}\label{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28a26fdc833ef14f44fa15d81522b6802ec}} 
+E\+I\+\_\+\+T\+R\+UE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 24 of file ei\+\_\+types.\+h.
+
+\mbox{\Hypertarget{ei__types_8h_a2438d9879374e1d4805231e9e407bbae}\label{ei__types_8h_a2438d9879374e1d4805231e9e407bbae}} 
+\index{ei\_types.h@{ei\_types.h}!ei\_fontstyle\_t@{ei\_fontstyle\_t}}
+\index{ei\_fontstyle\_t@{ei\_fontstyle\_t}!ei\_types.h@{ei\_types.h}}
+\doxysubsubsection{\texorpdfstring{ei\_fontstyle\_t}{ei\_fontstyle\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ei__types_8h_a2438d9879374e1d4805231e9e407bbae}{ei\+\_\+fontstyle\+\_\+t}}}
+
+
+
+Font style. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_style\_normal@{ei\_style\_normal}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_style\_normal@{ei\_style\_normal}}}\mbox{\Hypertarget{ei__types_8h_a2438d9879374e1d4805231e9e407bbaea9754cb1e12731d6a7697daa5678ebf72}\label{ei__types_8h_a2438d9879374e1d4805231e9e407bbaea9754cb1e12731d6a7697daa5678ebf72}} 
+ei\+\_\+style\+\_\+normal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_style\_bold@{ei\_style\_bold}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_style\_bold@{ei\_style\_bold}}}\mbox{\Hypertarget{ei__types_8h_a2438d9879374e1d4805231e9e407bbaeae551566e11a4b61b5227939c0a3f1bc5}\label{ei__types_8h_a2438d9879374e1d4805231e9e407bbaeae551566e11a4b61b5227939c0a3f1bc5}} 
+ei\+\_\+style\+\_\+bold&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_style\_italic@{ei\_style\_italic}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_style\_italic@{ei\_style\_italic}}}\mbox{\Hypertarget{ei__types_8h_a2438d9879374e1d4805231e9e407bbaeae96fec919cf8a425b35882b4686bd0ea}\label{ei__types_8h_a2438d9879374e1d4805231e9e407bbaeae96fec919cf8a425b35882b4686bd0ea}} 
+ei\+\_\+style\+\_\+italic&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_style\_underline@{ei\_style\_underline}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_style\_underline@{ei\_style\_underline}}}\mbox{\Hypertarget{ei__types_8h_a2438d9879374e1d4805231e9e407bbaea0daa1f570b16879f3e5f70c4a6071cdd}\label{ei__types_8h_a2438d9879374e1d4805231e9e407bbaea0daa1f570b16879f3e5f70c4a6071cdd}} 
+ei\+\_\+style\+\_\+underline&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_style\_strikethrough@{ei\_style\_strikethrough}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_style\_strikethrough@{ei\_style\_strikethrough}}}\mbox{\Hypertarget{ei__types_8h_a2438d9879374e1d4805231e9e407bbaea3a61c992dfbee07d608647f74f67aa64}\label{ei__types_8h_a2438d9879374e1d4805231e9e407bbaea3a61c992dfbee07d608647f74f67aa64}} 
+ei\+\_\+style\+\_\+strikethrough&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 140 of file ei\+\_\+types.\+h.
+
+\mbox{\Hypertarget{ei__types_8h_aa79a32b1d8ece0e44cfa394e870b270b}\label{ei__types_8h_aa79a32b1d8ece0e44cfa394e870b270b}} 
+\index{ei\_types.h@{ei\_types.h}!ei\_relief\_t@{ei\_relief\_t}}
+\index{ei\_relief\_t@{ei\_relief\_t}!ei\_types.h@{ei\_types.h}}
+\doxysubsubsection{\texorpdfstring{ei\_relief\_t}{ei\_relief\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ei__types_8h_aa79a32b1d8ece0e44cfa394e870b270b}{ei\+\_\+relief\+\_\+t}}}
+
+
+
+Type of relief. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_relief\_none@{ei\_relief\_none}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_relief\_none@{ei\_relief\_none}}}\mbox{\Hypertarget{ei__types_8h_aa79a32b1d8ece0e44cfa394e870b270ba105222bc995071e84bce027c90a59b62}\label{ei__types_8h_aa79a32b1d8ece0e44cfa394e870b270ba105222bc995071e84bce027c90a59b62}} 
+ei\+\_\+relief\+\_\+none&No relief (i.\+e. flat). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_relief\_raised@{ei\_relief\_raised}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_relief\_raised@{ei\_relief\_raised}}}\mbox{\Hypertarget{ei__types_8h_aa79a32b1d8ece0e44cfa394e870b270bac1e7867185743599ffcceb42784bd4e3}\label{ei__types_8h_aa79a32b1d8ece0e44cfa394e870b270bac1e7867185743599ffcceb42784bd4e3}} 
+ei\+\_\+relief\+\_\+raised&Above the screen. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ei\_relief\_sunken@{ei\_relief\_sunken}!ei\_types.h@{ei\_types.h}}\index{ei\_types.h@{ei\_types.h}!ei\_relief\_sunken@{ei\_relief\_sunken}}}\mbox{\Hypertarget{ei__types_8h_aa79a32b1d8ece0e44cfa394e870b270ba227a7ad58efd20f955450357c0bd4b36}\label{ei__types_8h_aa79a32b1d8ece0e44cfa394e870b270ba227a7ad58efd20f955450357c0bd4b36}} 
+ei\+\_\+relief\+\_\+sunken&Inside the screen. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 111 of file ei\+\_\+types.\+h.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{ei__types_8h_a00dfca48550b7224f2d8011497b9fd8c}\label{ei__types_8h_a00dfca48550b7224f2d8011497b9fd8c}} 
+\index{ei\_types.h@{ei\_types.h}!ei\_default\_background\_color@{ei\_default\_background\_color}}
+\index{ei\_default\_background\_color@{ei\_default\_background\_color}!ei\_types.h@{ei\_types.h}}
+\doxysubsubsection{\texorpdfstring{ei\_default\_background\_color}{ei\_default\_background\_color}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structei__color__t}{ei\+\_\+color\+\_\+t}} ei\+\_\+default\+\_\+background\+\_\+color = \{ 0x\+A0, 0x\+A0, 0x\+A0, 0xff \}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The default background color of widgets. 
+
+
+
+Definition at line 88 of file ei\+\_\+types.\+h.
+
+\mbox{\Hypertarget{ei__types_8h_a722bfa1a8a9a4202fb2d4abce2f06a8c}\label{ei__types_8h_a722bfa1a8a9a4202fb2d4abce2f06a8c}} 
+\index{ei\_types.h@{ei\_types.h}!ei\_default\_font@{ei\_default\_font}}
+\index{ei\_default\_font@{ei\_default\_font}!ei\_types.h@{ei\_types.h}}
+\doxysubsubsection{\texorpdfstring{ei\_default\_font}{ei\_default\_font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ei__types_8h_a22c8198e4d641e4bc67bb17f9c6bcda7}{ei\+\_\+font\+\_\+t}} ei\+\_\+default\+\_\+font}
+
+
+
+The default font used in widgets. 
+
+\mbox{\Hypertarget{ei__types_8h_aa888e6bf1302563264631d781918f6d6}\label{ei__types_8h_aa888e6bf1302563264631d781918f6d6}} 
+\index{ei\_types.h@{ei\_types.h}!ei\_default\_font\_filename@{ei\_default\_font\_filename}}
+\index{ei\_default\_font\_filename@{ei\_default\_font\_filename}!ei\_types.h@{ei\_types.h}}
+\doxysubsubsection{\texorpdfstring{ei\_default\_font\_filename}{ei\_default\_font\_filename}}
+{\footnotesize\ttfamily const char ei\+\_\+default\+\_\+font\+\_\+filename\mbox{[}$\,$\mbox{]} = \char`\"{}misc/font.\+ttf\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 163 of file ei\+\_\+types.\+h.
+
+\mbox{\Hypertarget{ei__types_8h_adc5dd1241a145ff097f2c01dd6ab13af}\label{ei__types_8h_adc5dd1241a145ff097f2c01dd6ab13af}} 
+\index{ei\_types.h@{ei\_types.h}!ei\_font\_default\_color@{ei\_font\_default\_color}}
+\index{ei\_font\_default\_color@{ei\_font\_default\_color}!ei\_types.h@{ei\_types.h}}
+\doxysubsubsection{\texorpdfstring{ei\_font\_default\_color}{ei\_font\_default\_color}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structei__color__t}{ei\+\_\+color\+\_\+t}} ei\+\_\+font\+\_\+default\+\_\+color = \{ 0x00, 0x00, 0x00, 0xff \}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 162 of file ei\+\_\+types.\+h.
+
+\mbox{\Hypertarget{ei__types_8h_a157b1b2a04132b2ac00400b202b134de}\label{ei__types_8h_a157b1b2a04132b2ac00400b202b134de}} 
+\index{ei\_types.h@{ei\_types.h}!ei\_font\_default\_size@{ei\_font\_default\_size}}
+\index{ei\_font\_default\_size@{ei\_font\_default\_size}!ei\_types.h@{ei\_types.h}}
+\doxysubsubsection{\texorpdfstring{ei\_font\_default\_size}{ei\_font\_default\_size}}
+{\footnotesize\ttfamily const int ei\+\_\+font\+\_\+default\+\_\+size = 22\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 161 of file ei\+\_\+types.\+h.
+

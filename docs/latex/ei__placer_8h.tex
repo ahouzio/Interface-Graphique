@@ -1,0 +1,131 @@
+\hypertarget{ei__placer_8h}{}\doxysection{ei\+\_\+placer.\+h File Reference}
+\label{ei__placer_8h}\index{ei\_placer.h@{ei\_placer.h}}
+
+
+Manages the positionning and sizing of widgets on the screen.  
+
+
+{\ttfamily \#include \char`\"{}ei\+\_\+types.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structei__placer__params__t}{ei\+\_\+placer\+\_\+params\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em A structure storing the placement parameters of a widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structei__placer__params__t}{ei\+\_\+placer\+\_\+params\+\_\+t}} \mbox{\hyperlink{ei__placer_8h_a474d0aa1bdf15a7763ed758135615f87}{ei\+\_\+placer\+\_\+params\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em A structure storing the placement parameters of a widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ei__placer_8h_ae7e1c98d8ae1be26ad3ff0c3fde9d8e2}{ei\+\_\+place}} (struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$widget, \mbox{\hyperlink{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450}{ei\+\_\+anchor\+\_\+t}} $\ast$anchor, int $\ast$x, int $\ast$y, int $\ast$width, int $\ast$height, float $\ast$rel\+\_\+x, float $\ast$rel\+\_\+y, float $\ast$rel\+\_\+width, float $\ast$rel\+\_\+height)
+\begin{DoxyCompactList}\small\item\em Configures the geometry of a widget using the \char`\"{}placer\char`\"{} geometry manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ei__placer_8h_af6ab9a9a1147224d5c107ff5d950ec6f}{ei\+\_\+placer\+\_\+run}} (struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Tells the placer to recompute the geometry of a widget. The widget must have been previsouly placed by a call to \mbox{\hyperlink{ei__placer_8h_ae7e1c98d8ae1be26ad3ff0c3fde9d8e2}{ei\+\_\+place}}. Geometry re-\/computation is necessary for example when the text label of a widget has changed, and thus the widget \char`\"{}natural\char`\"{} size has changed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ei__placer_8h_a277bbc4cb6e175127219ddcea161c1bc}{ei\+\_\+placer\+\_\+forget}} (struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Tells the placer to remove a widget from the screen and forget about it. Note\+: the widget is not destroyed and still exists in memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the positionning and sizing of widgets on the screen. 
+
+\begin{DoxyAuthor}{Author}
+Created by François Bérard on 18.\+12.\+11. Copyright 2011 Ensimag. All rights reserved. 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{ei__placer_8h_a474d0aa1bdf15a7763ed758135615f87}\label{ei__placer_8h_a474d0aa1bdf15a7763ed758135615f87}} 
+\index{ei\_placer.h@{ei\_placer.h}!ei\_placer\_params\_t@{ei\_placer\_params\_t}}
+\index{ei\_placer\_params\_t@{ei\_placer\_params\_t}!ei\_placer.h@{ei\_placer.h}}
+\doxysubsubsection{\texorpdfstring{ei\_placer\_params\_t}{ei\_placer\_params\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structei__placer__params__t}{ei\+\_\+placer\+\_\+params\+\_\+t}} \mbox{\hyperlink{structei__placer__params__t}{ei\+\_\+placer\+\_\+params\+\_\+t}}}
+
+
+
+A structure storing the placement parameters of a widget. 
+
+\begin{DoxyVerb}    All go in pairs: a pointer to the value, and the value itself.
+    If the pointer is NULL, this means that no parameter was provided and the default value
+    should be used.
+    If the pointer is not NULL, it points to the value field.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ei__placer_8h_ae7e1c98d8ae1be26ad3ff0c3fde9d8e2}\label{ei__placer_8h_ae7e1c98d8ae1be26ad3ff0c3fde9d8e2}} 
+\index{ei\_placer.h@{ei\_placer.h}!ei\_place@{ei\_place}}
+\index{ei\_place@{ei\_place}!ei\_placer.h@{ei\_placer.h}}
+\doxysubsubsection{\texorpdfstring{ei\_place()}{ei\_place()}}
+{\footnotesize\ttfamily void ei\+\_\+place (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$}]{widget,  }\item[{\mbox{\hyperlink{ei__types_8h_a3852c963af609d31d7cfcff79c4c8450}{ei\+\_\+anchor\+\_\+t}} $\ast$}]{anchor,  }\item[{int $\ast$}]{x,  }\item[{int $\ast$}]{y,  }\item[{int $\ast$}]{width,  }\item[{int $\ast$}]{height,  }\item[{float $\ast$}]{rel\+\_\+x,  }\item[{float $\ast$}]{rel\+\_\+y,  }\item[{float $\ast$}]{rel\+\_\+width,  }\item[{float $\ast$}]{rel\+\_\+height }\end{DoxyParamCaption})}
+
+
+
+Configures the geometry of a widget using the \char`\"{}placer\char`\"{} geometry manager. 
+
+\begin{DoxyVerb}    The placer computes a widget's geometry relative to its parent *content_rect*.
+
+            If the widget was already managed by the "placer", then this calls simply updates
+    the placer parameters: arguments that are not NULL replace previous values.
+
+            When the arguments are passed as NULL, the placer uses default values (detailed in
+    the argument descriptions below). If no size is provided (either absolute or
+    relative), then either the requested size of the widget is used if one was provided,
+    or the default size is used.
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget to place. \\
+\hline
+{\em anchor} & How to anchor the widget to the position defined by the placer (defaults to ei\+\_\+anc\+\_\+northwest). \\
+\hline
+{\em x} & The absolute x position of the widget (defaults to 0). \\
+\hline
+{\em y} & The absolute y position of the widget (defaults to 0). \\
+\hline
+{\em width} & The absolute width for the widget (defaults to the requested width or the default width of the widget if rel\+\_\+width is N\+U\+LL, or 0 otherwise). \\
+\hline
+{\em height} & The absolute height for the widget (defaults to the requested height or the default height of the widget if rel\+\_\+height is N\+U\+LL, or 0 otherwise). \\
+\hline
+{\em rel\+\_\+x} & The relative x position of the widget\+: 0.\+0 corresponds to the left side of the master, 1.\+0 to the right side (defaults to 0.\+0). \\
+\hline
+{\em rel\+\_\+y} & The relative y position of the widget\+: 0.\+0 corresponds to the top side of the master, 1.\+0 to the bottom side (defaults to 0.\+0). \\
+\hline
+{\em rel\+\_\+width} & The relative width of the widget\+: 0.\+0 corresponds to a width of 0, 1.\+0 to the width of the master (defaults to 0.\+0). \\
+\hline
+{\em rel\+\_\+height} & The relative height of the widget\+: 0.\+0 corresponds to a height of 0, 1.\+0 to the height of the master (defaults to 0.\+0). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ei__placer_8h_a277bbc4cb6e175127219ddcea161c1bc}\label{ei__placer_8h_a277bbc4cb6e175127219ddcea161c1bc}} 
+\index{ei\_placer.h@{ei\_placer.h}!ei\_placer\_forget@{ei\_placer\_forget}}
+\index{ei\_placer\_forget@{ei\_placer\_forget}!ei\_placer.h@{ei\_placer.h}}
+\doxysubsubsection{\texorpdfstring{ei\_placer\_forget()}{ei\_placer\_forget()}}
+{\footnotesize\ttfamily void ei\+\_\+placer\+\_\+forget (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$}]{widget }\end{DoxyParamCaption})}
+
+
+
+Tells the placer to remove a widget from the screen and forget about it. Note\+: the widget is not destroyed and still exists in memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget to remove from screen. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ei__placer_8h_af6ab9a9a1147224d5c107ff5d950ec6f}\label{ei__placer_8h_af6ab9a9a1147224d5c107ff5d950ec6f}} 
+\index{ei\_placer.h@{ei\_placer.h}!ei\_placer\_run@{ei\_placer\_run}}
+\index{ei\_placer\_run@{ei\_placer\_run}!ei\_placer.h@{ei\_placer.h}}
+\doxysubsubsection{\texorpdfstring{ei\_placer\_run()}{ei\_placer\_run()}}
+{\footnotesize\ttfamily void ei\+\_\+placer\+\_\+run (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structei__widget__t}{ei\+\_\+widget\+\_\+t}} $\ast$}]{widget }\end{DoxyParamCaption})}
+
+
+
+Tells the placer to recompute the geometry of a widget. The widget must have been previsouly placed by a call to \mbox{\hyperlink{ei__placer_8h_ae7e1c98d8ae1be26ad3ff0c3fde9d8e2}{ei\+\_\+place}}. Geometry re-\/computation is necessary for example when the text label of a widget has changed, and thus the widget \char`\"{}natural\char`\"{} size has changed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget which geometry must be re-\/computed. \\
+\hline
+\end{DoxyParams}
